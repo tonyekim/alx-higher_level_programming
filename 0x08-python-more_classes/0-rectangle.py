@@ -1,8 +1,12 @@
 #!/usr/bin/python3
-"""Defines a Rectangle class. """
+"""
+A rectangle.
+"""
+
 
 class Rectangle:
-    """Represent a rectangle."""
-    def __init__(self):
-        pass
+    """
+    Rectangle functions and data
+    """
 
+    pass
