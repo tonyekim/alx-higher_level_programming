@@ -1,4 +1,3 @@
-__ List Databases
-__ Show Command with databases
-
+-- List Databases
+-- Show Command with Databases
 SHOW databases;
