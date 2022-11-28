@@ -10,3 +10,7 @@
 * Language: Javascript, Node6 ```curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -``` ```sudo apt-get install -y nodejs```
 * OS: Ubuntu 14.04 LTS
 * Style guidelines: [Javascript Standard](https://standardjs.com/rules.html) || [Javascript Semistandard](https://github.com/Flet/semistandard) ```sudo npm install semistandard --global``` || [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+
+---
+### Authors
+Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
