@@ -1,24 +1,24 @@
 #!/usr/bin/node
 
-let url = process.argv[2];
 const request = require('request');
+const starWarsUri = process.argv[2];
+let times = 0;
 
-request(url, function (err, response, body) {
-  if (err) {
-    console.log(err);
-  } else if (response.statusCode === 200) {
-    let films = JSON.parse(body).results;
-    let count = 0;
-    for (let i in films) {
-      let chars = films[i].characters;
-      for (let c in chars) {
-	if (chars[c].includes('18')) {
-	  count++;
-	}
+request(starWarsUri, function (_err, _res, body) {
+  body = JSON.parse(body).results;
+
+  for (let i = 0; i < body.length; ++i) {
+    const characters = body[i].characters;
+
+    for (let j = 0; j < characters.length; ++j) {
+      const character = characters[j];
+      const characterId = character.split('/')[5];
+
+      if (characterId === '18') {
+        times += 1;
       }
     }
-    console.log(count);
-  } else {
-    console.log('Erorr Code:' + response.statusCode);
   }
+
+  console.log(times);
 });
